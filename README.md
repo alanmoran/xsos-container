@@ -2,6 +2,16 @@
 
 A lightweight, Fedora based [xsos](https://github.com/ryran/xsos) image which allows you to mount a local sosreport and use xsos. This is mostly due to xsos not working on MacOS
 
+
+#### Quick Way
+Pull the image from docker.io and go:
+
+```
+docker pull alanmoran/xsos-container
+docker run -it -v <path-to-local-sosreport-dir>:/tmp/sos/ alanmoran/xsos-container bash xsos /tmp/sos/ -a
+```
+
+
 #### Building Locally
 
 The following example shows how this image can be used to use xsos on a local sosreport.
